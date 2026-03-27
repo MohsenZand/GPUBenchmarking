@@ -28,3 +28,23 @@ A suite of benchmarking scripts designed to evaluate Computer Vision (CV) and La
 To submit a benchmark job to a Slurm cluster:
 ```bash
 sbatch --partition=h100 --gres=gpu:4 run_bench.sh
+
+## Benchmark Results
+
+Below are the summarized performance metrics across different GPU architectures and precisions.
+
+### Computer Vision Performance
+The following table illustrates the throughput (FPS) and efficiency for standard CV models like ResNet50 and ViT.
+
+![Computer Vision Benchmarking Results](figures/cv_results_table.png)
+
+*Table 1: CV Performance across A100, H100, and Blackwell architectures.*
+
+---
+
+### LLM Inference Performance
+The following table highlights the Tokens Per Second (TPS) and Time To First Token (TTFT) for Llama-3 models.
+
+![LLM Benchmarking Results](figures/llm_results_table.png)
+
+*Table 2: LLM throughput and latency metrics focusing on FP8 and FP4 precision gains.*
