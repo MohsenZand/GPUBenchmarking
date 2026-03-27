@@ -28,6 +28,7 @@ A suite of benchmarking scripts designed to evaluate Computer Vision (CV) and La
 To submit a benchmark job to a Slurm cluster:
 ```bash
 sbatch --partition=h100 --gres=gpu:4 run_bench.sh
+```
 
 ## Benchmark Results
 
