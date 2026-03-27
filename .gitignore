@@ -1,0 +1,18 @@
+# Python Environment
+py311/
+
+# Large Model Weights (Llama-3)
+models/
+
+# Output and Log files
+*.out
+*.csv
+
+# Data and Figure directories
+figs/
+figs_comp/
+figs_exact/
+v1/
+
+# Python Scripts
+vis_0.py
